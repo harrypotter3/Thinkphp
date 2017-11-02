@@ -1,0 +1,24 @@
+[ 2017-09-08T22:43:00+08:00 ] ::1 /blog%202/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007668s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/blog 2/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog_article_category` [ RunTime:0.007561s ]
+SQL: SHOW COLUMNS FROM `blog_article_category` [ RunTime:0.011492s ]
+SQL: SELECT * FROM `blog_article_category` WHERE ( `status` = 1 )  [ RunTime:0.000850s ]
+SQL: SHOW COLUMNS FROM `blog_article_detail` [ RunTime:0.011493s ]
+SQL: SELECT `id`,`title`,`category_id`,`create_time` FROM `blog_article_detail` WHERE ( `status` = 1 ) ORDER BY create_time desc LIMIT 6   [ RunTime:0.007612s ]
+SQL: SELECT `id`,`title`,`category_id`,`create_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) ORDER BY hits desc LIMIT 6   [ RunTime:0.001444s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.057981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003865s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004708s ]
+

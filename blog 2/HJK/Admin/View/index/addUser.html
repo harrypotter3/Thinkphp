@@ -1,0 +1,38 @@
+<extend name="public:frameset"/>
+<block name="style">
+</block>
+<block name="body">
+	<div class="container">
+
+		<div class="title"><a href="">个人信息</a></div>
+		<div class="user">
+			<form action="{:U('Index/addUsers')}" method="post" enctype="multipart/form-data">
+				<table>
+					<tr class="first">
+						<td>登录ID</td>
+						<td>用户名</td>
+						<td>密码</td>
+						<td>头像</td>
+						<td>操作</td>
+					</tr>
+					<tr>
+					
+
+						<td><input type="text" value="" name="user_id"/>
+						
+
+						
+						</td>
+						<td><input type="text" value="" name="name"/></td>
+						<td><input type="text" value="" name="password"/></td>
+						<td><a href=""  class="img-bac file file-size">
+						<input type="file" name="index_show" id="">上传头像</a></td>
+						<td><input name="" class="submit" type="submit" value="提交"> </td>
+						
+					</tr>
+				</table>
+			</form>
+		</div>
+
+	</div>
+</block>

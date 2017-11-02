@@ -1,0 +1,111 @@
+<extend name="public:frameset"/>
+<block name="style">
+	<link href="__PUBLIC__/asset/global/css/main.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="banner">
+	<div id="banner">
+		<div class="inner">
+			<h1>张小窝</h1>
+			<p class="sub-heading">但愿你的眼睛，只看得到笑容</p>
+			<button>了解我</button>
+			<div class="more">
+				更多
+			</div>
+		</div>
+	</div>
+</block>
+<block name="body">
+	<div class="content"><!--Start  -->
+		<section class="green-section">
+			<div class="wrapper">
+				<div>
+					<h2>爱好分享</h2>
+					<div class="hr"></div>
+					<p>
+						这是一只爱抓小精灵的程序猿的故事
+					</p>
+				</div>
+				<div class="icon-group">
+					<span class="icon"><b>手绘</b></span>
+					<span class="icon"><b>代码</b></span>
+					<span class="icon"><b>动漫</b></span>
+				</div>
+			</div>
+		</section>
+		
+		<section class="gray-section">
+			<div class="contain-preview">
+				<div class="article-preview">
+					<div class="img-section">
+						<img src="__PUBLIC__/asset/global/img/pic01.jpg">
+					</div>
+					<div class="text-section">
+						<h2>其实我一开始是拒绝的</h2>
+						<div class="sub-heading">我是副标题</div>
+						<p>snkasjfhkasfhashflasfjasjfscnalkscaslkjflsakdjlasdj</p>
+					</div>
+				</div>
+				<div class="article-preview">
+					<div class="text-section">
+						<h2>其实我一开始是拒绝的</h2>
+						<div class="sub-heading">我是副标题</div>
+						<p>snkasjfhkasfhashflasfjasjfscnalkscaslkjflsakdjlasdj</p>
+					</div>
+					<div class="img-section">
+						<img src="__PUBLIC__/asset/global/img/pic02.jpg">
+					</div>
+				</div>
+				<div class="article-preview">
+					<div class="img-section">
+						<img src="__PUBLIC__/asset/global/img/pic03.jpg">
+					</div>
+					<div class="text-section">
+						<h2>其实我一开始是拒绝的</h2>
+						<div class="sub-heading">我是副标题</div>
+						<p>snkasjfhkasfhashflasfjasjfscnalkscaslkjflsakdjlasdj</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="purple-section">
+			<div class="wrapper">
+				<div class="heading-wrapper">
+					<h2>文章排名</h2>
+					<div class="hr"></div>
+				</div>
+
+				<div class="card-group clearfix">
+					<div class="card">
+						<div class="card-content">
+							<h3>最新</h3>
+							<div>
+								<ul>
+								<volist name="new_article" id="new">
+									<li>
+										<a href="{:U('index/detail',array('id'=>$new['id']))}">{$new['title']}</a>
+										
+									</li>
+								</volist>	
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-content">
+							<h3>最热</h3>
+							<div>
+								<ul>
+								<volist name="hot_article" id="hot">
+									<li><a href="{:U('index/detail',array('id'=>$hot['id']))}">{$hot['title']}</a></li>
+								</volist>	
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</div><!--End  -->
+</block>

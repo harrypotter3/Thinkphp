@@ -1,0 +1,47 @@
+/*the header start*/
+header{
+	height:400px;
+	background: #444 url(../img/banner.jpg);
+	background-repeat:no-repeat;
+	overflow: hidden;
+	background-size:cover;
+	background-position:center center;
+	background-attachment:fixed;
+
+}
+nav{
+	height:50px;
+	background:transparent;
+}
+nav ul{
+	list-style: none;
+}
+nav ul li a{
+	text-decoration: none;
+	color:white;
+}
+nav ul li:nth-child(1){
+	float:left;
+	font-size: 25px;
+
+}
+nav ul li{
+	color:white;
+	float:right;
+	margin-right: 20px;
+	font-size:20px;
+}
+.header-contain{
+	background:transparent;
+	margin:0 auto;
+	max-width:500px;
+	position:relative;
+	top:80px;
+	color:white;
+}
+.header-contain h1{
+	text-align:center;
+	border-bottom: 2px solid #fff;
+	border-top:2px solid #fff;
+	padding:10px;
+}

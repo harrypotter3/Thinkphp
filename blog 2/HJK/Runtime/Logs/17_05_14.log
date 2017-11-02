@@ -1,0 +1,48 @@
+[ 2017-05-14T09:29:37+08:00 ] ::1 /blog%202/index.php/Home/index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007456s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/blog 2/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog_article_category` [ RunTime:0.008258s ]
+SQL: SHOW COLUMNS FROM `blog_article_category` [ RunTime:0.008619s ]
+SQL: SELECT * FROM `blog_article_category` WHERE ( `status` = 1 )  [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `blog_article_detail` [ RunTime:0.007450s ]
+SQL: SELECT `id`,`title`,`category_id`,`create_time` FROM `blog_article_detail` WHERE ( `status` = 1 ) ORDER BY create_time desc LIMIT 6   [ RunTime:0.001136s ]
+SQL: SELECT `id`,`title`,`category_id`,`create_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) ORDER BY hits desc LIMIT 6   [ RunTime:0.001101s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.049048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004397s ]
+
+[ 2017-05-14T09:29:37+08:00 ] ::1 /blog%202/index.php/Home/index/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/blog 2/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog_article_category` [ RunTime:0.003737s ]
+SQL: SHOW COLUMNS FROM `blog_article_category` [ RunTime:0.007541s ]
+SQL: SELECT * FROM `blog_article_category` WHERE ( `status` = 1 )  [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `blog_article_detail` [ RunTime:0.007808s ]
+SQL: SELECT `id`,`title`,`category_id`,`create_time` FROM `blog_article_detail` WHERE ( `status` = 1 ) ORDER BY create_time desc LIMIT 6   [ RunTime:0.000621s ]
+SQL: SELECT `id`,`title`,`category_id`,`create_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) ORDER BY hits desc LIMIT 6   [ RunTime:0.000548s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001043s ]
+

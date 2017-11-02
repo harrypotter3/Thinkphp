@@ -1,0 +1,50 @@
+[ 2017-03-26T18:35:45+08:00 ] ::1 /blog/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002366s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\blog\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog_article_category` [ RunTime:0.002221s ]
+SQL: SHOW COLUMNS FROM `blog_article_category_model` [ RunTime:0.000988s ]
+ERR: 1146:Table 'myblog.blog_article_category_model' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `blog_article_category_model`
+SQL: SELECT * FROM `blog_article_category_model` WHERE ( `status` = 1 )  [ RunTime:0.000581s ]
+ERR: 1146:Table 'myblog.blog_article_category_model' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `blog_article_category_model` WHERE ( `status` = 1 ) 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000995s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001581s ]
+
+[ 2017-03-26T18:47:08+08:00 ] ::1 /blog/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001651s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp64\www\blog\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog_article_category` [ RunTime:0.001921s ]
+SQL: SHOW COLUMNS FROM `blog_article_category_model` [ RunTime:0.000970s ]
+ERR: 1146:Table 'myblog.blog_article_category_model' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `blog_article_category_model`
+SQL: SELECT * FROM `blog_article_category_model` WHERE ( `status` = 1 )  [ RunTime:0.000563s ]
+ERR: 1146:Table 'myblog.blog_article_category_model' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `blog_article_category_model` WHERE ( `status` = 1 ) 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000865s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000994s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000922s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001039s ]
+

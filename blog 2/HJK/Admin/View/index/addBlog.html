@@ -1,0 +1,45 @@
+<extend name="public:frameset"/>
+<block name="style">
+</block>
+<block name="body">
+	<div class="container">
+
+		<div class="title"><a href="">添加文章</a></div>
+		<div style="width:860px; margin: 30px auto;">
+			<form action="{:U('Index/addBlogs')}" method="post">
+				<select name="category_id" id="" class="editselesort">
+				<volist name="type" id="vo">
+					<option value ="{$vo['id']}">{$vo['name']}</option>
+					
+					</volist>
+				</select>
+				<input type="text" name="title" class="edittitle" placeholder="博客标题:" style="width:97.5%;" />
+				<textarea id="content1" name="content" placeholder="博客内容" >
+				<volist name="content" id="vo">
+					<option value ="{$vo['id']}">{$vo['res']}</option>
+				
+				
+
+				</volist>
+				</textarea>
+				<input type="submit" class="editsubmit" value="提交" />
+			</form>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="__PUBLIC__/asset/plugins/ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/asset/plugins/ueditor/ueditor.all.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/asset/plugins/ueditor/lang/zh-cn/zh-cn.js"></script>
+	<script type="text/javascript">
+		UE.getEditor('content1',{initialFrameWidth:850,
+			initialFrameHeight:200,
+			elementPathEnabled: false, //删除元素路径
+      		wordCount: false    //删除字数统计
+		});
+
+	</script>
+</block>
+
+<block name="script">
+	
+</block>

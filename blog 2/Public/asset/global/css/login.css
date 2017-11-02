@@ -1,0 +1,36 @@
+.login-form{
+	position: relative;
+	background-color: #ccc;
+	background-image:url("../img/bg.png");
+	padding-top:40px;
+	height: 380px;
+	width: 40%;
+	border-radius: 4px;
+	top:120px;
+	margin:0 auto;
+	
+} 
+.userImg h2{
+	text-align: center;
+}
+.form{
+	padding-top:30px;
+}
+
+.form input,.form button{
+	display: block;
+	margin:0 auto;
+	height: 43px;
+	width: 66%;
+	margin-bottom:20px;
+	outline: none;
+	border-radius: 6px;
+	border:1px solid #ccc;
+	padding-left:10px;
+}
+
+.form button{
+	background-color: #0099FF;
+	color:#fcf8e3;
+	font-size: 18px;
+}

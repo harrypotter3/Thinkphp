@@ -1,0 +1,181 @@
+[ 2017-05-13T09:36:36+08:00 ] ::1 /blog%202/index.php/Home/index/detail/id/6.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007902s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/blog 2/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog_article_category` [ RunTime:0.007206s ]
+SQL: SHOW COLUMNS FROM `blog_article_category` [ RunTime:0.010730s ]
+SQL: SELECT * FROM `blog_article_category` WHERE ( `status` = 1 )  [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `blog_article_detail` [ RunTime:0.011319s ]
+SQL: UPDATE `blog_article_detail` SET `hits`=hits+1 WHERE ( `status` = 1 ) AND ( `id` = 6 ) [ RunTime:0.010626s ]
+SQL: SELECT * FROM `blog_article_detail` WHERE ( `status` = 1 ) AND ( `id` = 6 )  [ RunTime:0.000477s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.034848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004111s ]
+
+[ 2017-05-13T09:36:44+08:00 ] ::1 /blog%202/index.php/Home/index/category/category_id/7.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/blog 2/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog_article_category` [ RunTime:0.008458s ]
+SQL: SHOW COLUMNS FROM `blog_article_category` [ RunTime:0.006952s ]
+SQL: SELECT * FROM `blog_article_category` WHERE ( `status` = 1 )  [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `blog_article_detail` [ RunTime:0.010411s ]
+NOTIC: [8] Undefined index: p /Applications/MAMP/htdocs/blog 2/HJK/Home/Model/ArticleDetailModel.class.php 第 46 行.
+SQL: SELECT `id`,`title`,`content`,`create_time`,`update_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) AND ( `c_id` = 0 ) LIMIT 0,2   [ RunTime:0.000597s ]
+NOTIC: [8] Undefined index: p /Applications/MAMP/htdocs/blog 2/HJK/Home/Model/ArticleDetailModel.class.php 第 61 行.
+SQL: SELECT `title`,`content`,`create_time`,`update_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) AND ( `category_id` = 7 ) LIMIT 0,2   [ RunTime:0.000538s ]
+NOTIC: [8] Undefined index: p /Applications/MAMP/htdocs/blog 2/HJK/Home/Model/ArticleDetailModel.class.php 第 61 行.
+SQL: SELECT `title`,`content`,`create_time`,`update_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) AND ( `category_id` = 7 ) LIMIT 0,2   [ RunTime:0.000499s ]
+SQL: SELECT `title`,`content`,`create_time`,`update_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) AND ( `category_id` = 7 )  [ RunTime:0.000466s ]
+SQL: SELECT `id`,`title`,`category_id`,`create_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) ORDER BY create_time desc LIMIT 6   [ RunTime:0.000696s ]
+SQL: SELECT `id`,`title`,`category_id`,`create_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) ORDER BY create_time desc  [ RunTime:0.000642s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/blog 2/HJK/Runtime/Cache/Home/5f40890c856b15cde41ce2e9d4200e7c.php 第 79 行.
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/blog 2/HJK/Runtime/Cache/Home/5f40890c856b15cde41ce2e9d4200e7c.php 第 91 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021594s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001468s ]
+
+[ 2017-05-13T09:36:47+08:00 ] ::1 /blog%202/index.php/Home/index/category/category_id/9.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/blog 2/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog_article_category` [ RunTime:0.007241s ]
+SQL: SHOW COLUMNS FROM `blog_article_category` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `blog_article_category` WHERE ( `status` = 1 )  [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `blog_article_detail` [ RunTime:0.007847s ]
+NOTIC: [8] Undefined index: p /Applications/MAMP/htdocs/blog 2/HJK/Home/Model/ArticleDetailModel.class.php 第 46 行.
+SQL: SELECT `id`,`title`,`content`,`create_time`,`update_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) AND ( `c_id` = 0 ) LIMIT 0,2   [ RunTime:0.000526s ]
+NOTIC: [8] Undefined index: p /Applications/MAMP/htdocs/blog 2/HJK/Home/Model/ArticleDetailModel.class.php 第 61 行.
+SQL: SELECT `title`,`content`,`create_time`,`update_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) AND ( `category_id` = 9 ) LIMIT 0,2   [ RunTime:0.000570s ]
+NOTIC: [8] Undefined index: p /Applications/MAMP/htdocs/blog 2/HJK/Home/Model/ArticleDetailModel.class.php 第 61 行.
+SQL: SELECT `title`,`content`,`create_time`,`update_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) AND ( `category_id` = 9 ) LIMIT 0,2   [ RunTime:0.000471s ]
+SQL: SELECT `title`,`content`,`create_time`,`update_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) AND ( `category_id` = 9 )  [ RunTime:0.000500s ]
+SQL: SELECT `id`,`title`,`category_id`,`create_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) ORDER BY create_time desc LIMIT 6   [ RunTime:0.000751s ]
+SQL: SELECT `id`,`title`,`category_id`,`create_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) ORDER BY create_time desc  [ RunTime:0.000550s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/blog 2/HJK/Runtime/Cache/Home/5f40890c856b15cde41ce2e9d4200e7c.php 第 79 行.
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/blog 2/HJK/Runtime/Cache/Home/5f40890c856b15cde41ce2e9d4200e7c.php 第 91 行.
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/blog 2/HJK/Runtime/Cache/Home/5f40890c856b15cde41ce2e9d4200e7c.php 第 79 行.
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/blog 2/HJK/Runtime/Cache/Home/5f40890c856b15cde41ce2e9d4200e7c.php 第 91 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001132s ]
+
+[ 2017-05-13T09:36:51+08:00 ] ::1 /blog%202/index.php/Home/Index/category/category_id/9/p/2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/blog 2/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog_article_category` [ RunTime:0.008290s ]
+SQL: SHOW COLUMNS FROM `blog_article_category` [ RunTime:0.007406s ]
+SQL: SELECT * FROM `blog_article_category` WHERE ( `status` = 1 )  [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `blog_article_detail` [ RunTime:0.006447s ]
+SQL: SELECT `id`,`title`,`content`,`create_time`,`update_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) AND ( `c_id` = 0 ) LIMIT 2,2   [ RunTime:0.000558s ]
+SQL: SELECT `title`,`content`,`create_time`,`update_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) AND ( `category_id` = 9 ) LIMIT 2,2   [ RunTime:0.000644s ]
+SQL: SELECT `title`,`content`,`create_time`,`update_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) AND ( `category_id` = 9 ) LIMIT 2,2   [ RunTime:0.000448s ]
+SQL: SELECT `title`,`content`,`create_time`,`update_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) AND ( `category_id` = 9 )  [ RunTime:0.000512s ]
+SQL: SELECT `id`,`title`,`category_id`,`create_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) ORDER BY create_time desc LIMIT 6   [ RunTime:0.000574s ]
+SQL: SELECT `id`,`title`,`category_id`,`create_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) ORDER BY create_time desc  [ RunTime:0.000581s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/blog 2/HJK/Runtime/Cache/Home/5f40890c856b15cde41ce2e9d4200e7c.php 第 79 行.
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/blog 2/HJK/Runtime/Cache/Home/5f40890c856b15cde41ce2e9d4200e7c.php 第 91 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017377s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000865s ]
+
+[ 2017-05-13T09:37:02+08:00 ] ::1 /blog%202/index.php/Home/index/detail/id/11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/blog 2/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog_article_category` [ RunTime:0.006510s ]
+SQL: SHOW COLUMNS FROM `blog_article_category` [ RunTime:0.007023s ]
+SQL: SELECT * FROM `blog_article_category` WHERE ( `status` = 1 )  [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `blog_article_detail` [ RunTime:0.007630s ]
+SQL: UPDATE `blog_article_detail` SET `hits`=hits+1 WHERE ( `status` = 1 ) AND ( `id` = 11 ) [ RunTime:0.006444s ]
+SQL: SELECT * FROM `blog_article_detail` WHERE ( `status` = 1 ) AND ( `id` = 11 )  [ RunTime:0.000648s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2017-05-13T09:37:06+08:00 ] ::1 /blog%202/index.php/Home/index/category/category_id/10.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001928s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Applications/MAMP/htdocs/blog 2/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `blog_article_category` [ RunTime:0.008290s ]
+SQL: SHOW COLUMNS FROM `blog_article_category` [ RunTime:0.007698s ]
+SQL: SELECT * FROM `blog_article_category` WHERE ( `status` = 1 )  [ RunTime:0.000471s ]
+SQL: SHOW COLUMNS FROM `blog_article_detail` [ RunTime:0.007782s ]
+NOTIC: [8] Undefined index: p /Applications/MAMP/htdocs/blog 2/HJK/Home/Model/ArticleDetailModel.class.php 第 46 行.
+SQL: SELECT `id`,`title`,`content`,`create_time`,`update_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) AND ( `c_id` = 0 ) LIMIT 0,2   [ RunTime:0.000505s ]
+NOTIC: [8] Undefined index: p /Applications/MAMP/htdocs/blog 2/HJK/Home/Model/ArticleDetailModel.class.php 第 61 行.
+SQL: SELECT `title`,`content`,`create_time`,`update_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) AND ( `category_id` = 10 ) LIMIT 0,2   [ RunTime:0.000438s ]
+NOTIC: [8] Undefined index: p /Applications/MAMP/htdocs/blog 2/HJK/Home/Model/ArticleDetailModel.class.php 第 61 行.
+SQL: SELECT `title`,`content`,`create_time`,`update_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) AND ( `category_id` = 10 ) LIMIT 0,2   [ RunTime:0.000496s ]
+SQL: SELECT `title`,`content`,`create_time`,`update_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) AND ( `category_id` = 10 )  [ RunTime:0.000598s ]
+SQL: SELECT `id`,`title`,`category_id`,`create_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) ORDER BY create_time desc LIMIT 6   [ RunTime:0.000641s ]
+SQL: SELECT `id`,`title`,`category_id`,`create_time`,`hits` FROM `blog_article_detail` WHERE ( `status` = 1 ) ORDER BY create_time desc  [ RunTime:0.000550s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/blog 2/HJK/Runtime/Cache/Home/5f40890c856b15cde41ce2e9d4200e7c.php 第 79 行.
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/blog 2/HJK/Runtime/Cache/Home/5f40890c856b15cde41ce2e9d4200e7c.php 第 91 行.
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/blog 2/HJK/Runtime/Cache/Home/5f40890c856b15cde41ce2e9d4200e7c.php 第 79 行.
+NOTIC: [8] Undefined index: id /Applications/MAMP/htdocs/blog 2/HJK/Runtime/Cache/Home/5f40890c856b15cde41ce2e9d4200e7c.php 第 91 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018722s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000902s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001035s ]
+

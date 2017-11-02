@@ -1,0 +1,24 @@
+<extend name="public:frameset"/>
+<block name="style">
+	<link href="__PUBLIC__/asset/global/css/detail.css" rel="stylesheet" type="text/css"/>
+</block>
+
+<block name="body">
+	<div class="detail">
+		<div class="content"><!--Start  -->
+			<div class="content-wrapper">
+			<volist name="detail" id="de">
+			<div class="article-info">编辑于{$de['create_time']|date='Y-m-d h:i:s',###} | 浏览： {$de['hits']}</div>
+			
+			<article>
+				<h1>{$de['title']}</h1>
+				<div>
+					{$de['content']}
+				</div>
+			
+				</article>
+				</volist>
+			</div>
+		</div><!--End  -->
+	</div>
+</block>

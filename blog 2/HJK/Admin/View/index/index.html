@@ -1,0 +1,35 @@
+<extend name="public:frameset"/>
+<block name="style">
+</block>
+<block name="body">
+	<div class="container">
+
+		<div class="title"><a href="">博客管理</a></div>
+		<table>
+			<tr class="first">
+				<td>分类</td>
+				<td>标题</td>
+				<td>内容</td>
+				<td>发布时间</td>
+				<td>操作</td>
+			</tr>
+			<volist name="detail" id="vo">
+			<tr>
+				<td>{$vo['name']}</td>
+				<td>{$vo['title']|mb_substr=0,5,'utf-8'}</td>
+				<td>{$vo['content']| html_entity_decode |strip_tags|mb_substr=0,5,'utf-8'}</td>
+				<td>{$vo['create_time']|date="Y-m-d",###}</td>
+				<td>2017.3.14</td>
+				<td>
+					<a href="{:U('index/addBlog')}" class="add">添加</a>
+					<a href="{:U('Index/editBlog',array('id'=>$vo['id']))}" class="edit">编辑</a>
+					<a href="{:U('Index/delBlog',array('id'=>$vo['id']))}" class="del">删除</a>
+				</td>
+			</tr>
+	</volist>
+		</table>
+		<div class="page">
+			{$page}
+		</div>
+	</div>
+</block>

@@ -1,0 +1,20 @@
+<extend name="public:frameset"/>
+<block name="style">
+	<link href="__PUBLIC__/asset/global/css/login.css" rel="stylesheet" type="text/css"/>
+</block>
+<block name="body">
+	<div class="login-form">
+		<div class="userImg">
+			<h2>用户登录</h2>
+		</div>
+		<form action="{:U('Index/logins')}" class="form" method="post">
+			<input type="text" name="name" placeholder="用户名">
+			<input type="password" name="password" placeholder="密码">
+			
+			<input type="text"  name="verify" style="width:35%; margin:0 0 20px 100px; float:left;">
+			<img onclick="this.src='{:U('Index/verify')}'+Math.random();" src="{:U('Index/verify')}" style="margin:0 0 20px 43px; float:left; cursor:pointer;">
+			
+			<button type="submit">登录</button>
+		</form>
+	</div>
+</block>

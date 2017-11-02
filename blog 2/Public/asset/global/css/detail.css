@@ -1,0 +1,38 @@
+
+
+.content{
+	background-image:url("../img/bg.png");
+}
+
+
+.detail{
+	
+}
+
+.content{
+	
+	padding:40px 0;
+}
+
+.content-wrapper{
+	width: 1080px;
+	margin: 0 auto;
+	background-color:#fffff0;
+	border-radius: 6px;
+	box-shadow: -5px 3px 6px #999
+}
+
+.content-wrapper article{
+	width: 80%;
+	padding:50px 0;
+	margin:0 auto;
+	line-height: 2;
+}
+
+.article-info
+{
+	font-size: 14px;
+	color: #888; 
+	padding: 15px 0;
+	padding-left: 25px;
+}

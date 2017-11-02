@@ -1,0 +1,92 @@
+<extend name="public:frameset"/>
+<block name="style">
+	<link href="__PUBLIC__/asset/global/css/list.css" rel="stylesheet" type="text/css"/>
+
+</block>
+
+<block name="body">
+
+	<div class="in-index">
+		<div class="container">	
+			<div class="left">
+			<volist name="content" id="cont">
+				<div class="time-line">
+				
+					<div class="time-line-text">
+						<div class="title">
+							<h2>
+								<a href="{:U('index/detail',array('id'=>$cont['id']))}">{$cont['title']}</a>
+							</h2>
+						</div>
+						<div class="content">
+							{$cont['content']|mb_substr=0,300,'utf-8'}...<!--截取文章长度-->
+						</div>
+						<div class="tips pull-right">
+							<span class="time">
+								<i class="icon-timeline"></i>
+								{$cont['create_time']|date='Y-m-d h:i:s',###}
+							</span>
+							<span class="ready">
+								<a href="{:U('index/detail',array('id'=>$cont['id']))}">
+								<i class="icon-timeline"></i>
+									阅读全文
+								</a>
+							</span>
+							<span class="comment">
+								<a href="">
+									<i class="icon-timeline"></i>
+									评论
+								</a>
+							</span>
+						</div>		
+					</div>
+					</div>
+					</volist>
+				
+		<div class="page">
+                        <ul>
+                            {$pages}
+                        </ul>
+                    </div>
+	</div>
+			<div class="pull-right">
+				   <div class="time-line">
+		                        <div class="time-line-text">
+		                            <div class="title">
+		                                <h2>近期文章</h2>
+		                            </div>
+									<volist name="new_art" id="ne">
+		                            <div class="content">
+		                                <ul>
+		                                        <li>
+		                                            <div class="con-title">
+		                                                <a href="{:U('index/detail',array('id'=>$ne['id']))}">{$ne['title']}</a>
+		                                                <span class="pull-right">{$ne['create_time']|date='Y-m-d',###} </span>
+		                                            </div>
+		                                        </li>
+		                                </ul>
+		                            </div>
+		                            </volist>
+		                        </div>
+		                    </div>
+				<div class="time-line">
+					<div class="time-line-text">
+						<div class="title">
+							<h2>文章归档</h2>
+						</div>
+						<div class="content">
+							<ul class="blog-time-line">
+								<li><a href="">· 二零一七年 · 一月</a></li>
+								<li><a href="">· 二零一七年 · 二月</a></li>
+								<li><a href="">· 二零一七年 · 三月</a></li>
+								<li><a href="">· 二零一七年 · 四月</a></li>
+								<li><a href="">· 二零一七年 · 五月</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</block>
